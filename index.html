@@ -3,111 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="TimerSteak is an iOS app that guides steak cooks from cut selection to final resting timer." />
-  <title>TimerSteak | iOS Steak Timer</title>
+  <meta name="description" content="TimerSteak is a minimal iOS app for steak timing." />
+  <title>TimerSteak</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#hero" aria-label="TimerSteak home">
-        <img src="assets/app-icon.png" alt="TimerSteak app icon" width="32" height="32" />
-        <span>TimerSteak</span>
-      </a>
-      <!-- TODO: Replace # with the real App Store URL when available. -->
-      <a class="btn btn-primary btn-small" href="#">Download on App Store</a>
+    <div class="container">
+      <a class="brand" href="#features" aria-label="TimerSteak features">TimerSteak</a>
     </div>
   </header>
 
-  <main>
-    <section id="hero" class="section reveal">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">TimerSteak for iPhone</p>
-          <h1>Steak timing, made simple.</h1>
-          <p class="hero-subtitle">
-            Choose cut, thickness, and doneness. TimerSteak guides each stage from sear to rest.
-          </p>
+  <main class="container main-content">
+    <h1>TimerSteak</h1>
+    <p class="subtitle">iOS steak timer.</p>
 
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#">Download on App Store</a>
-            <a class="btn btn-secondary" href="#screens">See Screens</a>
-          </div>
-        </div>
+    <section id="features" class="features" aria-label="Key features">
+      <article class="feature-card">
+        <h2>Input-Based Timing</h2>
+        <p>Choose cut, thickness, and doneness to generate a practical cook timeline.</p>
+      </article>
 
-        <figure class="screen-card featured-screen">
-          <img src="assets/screen-timer-view.png" alt="TimerSteak active timer screen with circular stage progress and pause button" />
-          <figcaption>Active timer with clear stage cues.</figcaption>
-        </figure>
-      </div>
-    </section>
+      <article class="feature-card">
+        <h2>Multiple Timers</h2>
+        <p>Run several steak sessions in parallel without losing stage tracking.</p>
+      </article>
 
-    <section id="screens" class="section reveal">
-      <div class="container">
-        <h2>From setup to serve</h2>
-        <div class="screens-grid" role="list" aria-label="TimerSteak feature screenshots">
-          <figure class="screen-card" role="listitem">
-            <img src="assets/screen-cut-selection.png" alt="Steak cut selection screen with Ribeye, Sirloin, Filet Mignon, Strip, and T-Bone options" />
-            <figcaption>Cut selection</figcaption>
-          </figure>
-
-          <figure class="screen-card" role="listitem">
-            <img src="assets/screen-thickness-selection.png" alt="Thickness input screen with slider and millimeter value" />
-            <figcaption>Thickness input</figcaption>
-          </figure>
-
-          <figure class="screen-card" role="listitem">
-            <img src="assets/screen-doneness-selection.png" alt="Doneness selection grid with internal temperature ranges" />
-            <figcaption>Doneness target</figcaption>
-          </figure>
-
-          <figure class="screen-card" role="listitem">
-            <img src="assets/screen-timer-view.png" alt="Live timer screen showing first-side countdown" />
-            <figcaption>Active timer</figcaption>
-          </figure>
-
-          <figure class="screen-card" role="listitem">
-            <img src="assets/screen-multiple-timers.png" alt="Home screen with multiple concurrent steak timers and recents list" />
-            <figcaption>Multiple timers at once</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <section id="features" class="section reveal">
-      <div class="container">
-        <h2>Built for repeatable results</h2>
-        <div class="features-grid">
-          <article class="feature-item">
-            <h3>Timing tailored to your inputs</h3>
-            <p>Profiles are generated from cut, thickness, and doneness for a reliable baseline.</p>
-          </article>
-
-          <article class="feature-item">
-            <h3>Run multiple steak timers in parallel</h3>
-            <p>Track several steaks at once while keeping each cook session independent.</p>
-          </article>
-
-          <article class="feature-item">
-            <h3>Reuse recent cook setups</h3>
-            <p>Repeat successful cooks quickly from your recents and keep consistency over time.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="cta" class="section reveal">
-      <div class="container">
-        <div class="cta-panel">
-          <h2>Ready to cook with confidence?</h2>
-          <a class="btn btn-primary" href="#">Download on App Store</a>
-        </div>
-      </div>
+      <article class="feature-card">
+        <h2>Recent Cooks</h2>
+        <p>Reopen your latest setups to repeat successful cooks consistently.</p>
+      </article>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
+    <div class="container">
       <p>© <span id="year"></span> TimerSteak</p>
     </div>
   </footer>
