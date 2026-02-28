@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TimerSteak helps you cook steak with precision using cut, thickness, and doneness-based timing." />
+  <title>TimerSteak | Steak Timing, Simplified</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-noise" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow-left" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow-right" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top">
+        <img src="assets/app-icon.png" alt="TimerSteak app icon" width="34" height="34" />
+        <span>TimerSteak</span>
+      </a>
+      <a class="nav-cta" href="#how-it-works">How it works</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero container reveal">
+      <div class="hero-copy">
+        <p class="eyebrow">TimerSteak for iPhone</p>
+        <h1>Cook steak with confidence, not guesswork.</h1>
+        <p class="lede">
+          TimerSteak builds a three-stage plan from your steak cut, thickness, and target doneness.
+          Follow clear cues for first side, second side, and rest.
+        </p>
+
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#features">View Features</a>
+          <a class="btn btn-secondary" href="#how-it-works">See Workflow</a>
+        </div>
+
+        <ul class="hero-stats" aria-label="App highlights">
+          <li>
+            <strong>5</strong>
+            <span>steak cuts</span>
+          </li>
+          <li>
+            <strong>6</strong>
+            <span>doneness levels</span>
+          </li>
+          <li>
+            <strong>4</strong>
+            <span>concurrent timers</span>
+          </li>
+        </ul>
+      </div>
+
+      <aside class="phone-mock" aria-label="Timer preview">
+        <div class="mock-top">
+          <img src="assets/steak-ribeye.svg" alt="Ribeye icon" />
+          <div>
+            <p class="mock-label">Live Cook</p>
+            <p class="mock-title">Ribeye · 35 mm · Medium Rare</p>
+          </div>
+        </div>
+
+        <div class="mock-ring" role="img" aria-label="Timer progress ring">
+          <div class="mock-time">04:18</div>
+          <p>Second Side</p>
+        </div>
+
+        <ul class="mock-stages">
+          <li><span>First Side</span><strong>Done</strong></li>
+          <li><span>Second Side</span><strong>4m 18s</strong></li>
+          <li><span>Resting</span><strong>5m 00s</strong></li>
+        </ul>
+      </aside>
+    </section>
+
+    <section id="features" class="container reveal">
+      <h2>Made for repeatable results</h2>
+      <div class="grid cards-3">
+        <article class="card">
+          <h3>Precision Timing Engine</h3>
+          <p>Timing adapts to cut, thickness, and doneness so every cook starts with the right baseline.</p>
+        </article>
+        <article class="card">
+          <h3>Step-by-Step Cook Flow</h3>
+          <p>Move from setup to review quickly, then start your timer with a single action.</p>
+        </article>
+        <article class="card">
+          <h3>Recents and History</h3>
+          <p>Reuse previous cook presets and keep your process consistent over time.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="container reveal">
+      <h2>How it works</h2>
+      <div class="grid cards-3 steps">
+        <article class="card step-card">
+          <span class="step-num">01</span>
+          <h3>Select Inputs</h3>
+          <p>Pick steak cut, enter thickness, and choose your target doneness.</p>
+        </article>
+        <article class="card step-card">
+          <span class="step-num">02</span>
+          <h3>Review Timing</h3>
+          <p>See your full timing breakdown before starting the cook session.</p>
+        </article>
+        <article class="card step-card">
+          <span class="step-num">03</span>
+          <h3>Follow Cues</h3>
+          <p>Get prompts for flip, take off heat, and rest until your steak is ready.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container reveal">
+      <div class="availability card">
+        <img src="assets/steak-ribeye-slash.svg" alt="Steak icon" />
+        <div>
+          <h2>Ready for GitHub Pages</h2>
+          <p>
+            This website is fully static and deploys directly from any GitHub repository branch or folder.
+            No build tooling required.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> TimerSteak</p>
+      <p>Cook smarter. Serve better steaks.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
