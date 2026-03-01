@@ -1,7 +1,7 @@
 :root {
-  --bg: #fff;
-  --text: #000;
-  --muted: #666;
+  --bg: #ffffff;
+  --text: #000000;
+  --muted: #666666;
   --border: #e0e0e0;
   --orange: #ff8a1f;
 }
@@ -31,11 +31,9 @@ body {
 }
 
 .container {
-  width: min(720px, calc(100% - 2rem));
+  width: min(880px, calc(100% - 2rem));
   margin-inline: auto;
 }
-
-/* Header */
 
 .site-header {
   border-bottom: 1px solid var(--border);
@@ -46,6 +44,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
 }
 
 .brand {
@@ -58,7 +57,7 @@ body {
 
 .site-header nav {
   display: flex;
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
 .site-header nav a {
@@ -67,11 +66,14 @@ body {
   font-size: 0.9rem;
 }
 
+.site-header nav a[aria-current="page"] {
+  color: var(--text);
+  font-weight: 600;
+}
+
 .site-header nav a:hover {
   color: var(--text);
 }
-
-/* Main */
 
 .main-content {
   flex: 1;
@@ -84,8 +86,6 @@ h2,
 p {
   margin: 0;
 }
-
-/* Hero */
 
 .hero {
   text-align: center;
@@ -118,7 +118,50 @@ h1 {
   opacity: 0.85;
 }
 
-/* Footer */
+.legal-content {
+  flex: 1;
+  padding: 2.5rem 0 3rem;
+  text-align: left;
+}
+
+.legal-content h1 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  letter-spacing: -0.02em;
+}
+
+.legal-meta {
+  margin-top: 0.35rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.legal-section {
+  margin-top: 1.5rem;
+}
+
+.legal-section h2 {
+  font-size: 1.05rem;
+  color: var(--text);
+  letter-spacing: -0.01em;
+}
+
+.legal-section p {
+  margin-top: 0.45rem;
+  color: #181818;
+}
+
+.legal-content a {
+  color: var(--orange);
+}
+
+.legal-list {
+  margin: 0.45rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.legal-list li + li {
+  margin-top: 0.35rem;
+}
 
 .site-footer {
   border-top: 1px solid var(--border);
@@ -134,14 +177,10 @@ h1 {
   font-size: 0.85rem;
 }
 
-/* Focus */
-
 a:focus-visible {
-  outline: 2px solid var(--text);
+  outline: 2px solid var(--orange);
   outline-offset: 3px;
 }
-
-/* Responsive */
 
 @media (max-width: 600px) {
   .main-content {
@@ -152,4 +191,7 @@ a:focus-visible {
     font-size: 2rem;
   }
 
+  .site-header nav {
+    gap: 0.9rem;
+  }
 }
